@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 10 ;
+    margin-left: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;  
+}
+
+main {
+    padding: 20px;
+    background-image: url('pexels-karolina-grabowska-5202917.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    min-height: 80vh;
+}
+
+.introducao {
+    text-align: center;
+    margin: 50px 50px;
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: deslizar 12s infinite;
+}
+
+.slide {
+    flex: 0 0 40%;
+    padding: 0 10px;
+    position: relative;
+}
+
+.slide img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 72%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px 5px;
+}
+
+@keyframes deslizar {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    30%, 50% { transform: translateX(-100%); }
+    55%, 75% { transform: translateX(-200%); }
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: small;
+}
